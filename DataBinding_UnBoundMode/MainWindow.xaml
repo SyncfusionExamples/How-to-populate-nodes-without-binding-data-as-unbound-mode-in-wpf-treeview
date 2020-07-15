@@ -1,0 +1,59 @@
+﻿<Window x:Class="GettingStarted_UnBoundMode.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GettingStarted_UnBoundMode"
+        xmlns:Syncfusion="http://schemas.syncfusion.com/wpf" xmlns:Engine="clr-namespace:Syncfusion.UI.Xaml.TreeView.Engine;assembly=Syncfusion.SfTreeView.WPF"
+        mc:Ignorable="d"
+        Icon="App.Ico"
+        Title="GettingStarted_UnBoundMode">
+
+    <Grid Margin="0,0,0,54">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Syncfusion:SfTreeView HorizontalAlignment="Left" Height="414" Margin="10,0,0,0" VerticalAlignment="Center" Width="301">
+            <Syncfusion:SfTreeView.Nodes>
+                <Engine:TreeViewNode Content="Grains" IsExpanded="True">
+                    <Engine:TreeViewNode.ChildNodes>
+                        <Engine:TreeViewNode Content="Cereals" IsExpanded="True">
+                            <Engine:TreeViewNode.ChildNodes>
+                                <Engine:TreeViewNode Content="Rice"/>
+                                <Engine:TreeViewNode Content="Barley"/>
+                            </Engine:TreeViewNode.ChildNodes>
+                        </Engine:TreeViewNode>
+                        <Engine:TreeViewNode Content="Oilseeds">
+                            <Engine:TreeViewNode.ChildNodes>
+                                <Engine:TreeViewNode Content="Safflower"/>
+                            </Engine:TreeViewNode.ChildNodes>
+                        </Engine:TreeViewNode>
+                    </Engine:TreeViewNode.ChildNodes>
+                </Engine:TreeViewNode>
+                <Engine:TreeViewNode Content="Fruits" IsExpanded="true">
+                    <Engine:TreeViewNode.ChildNodes>
+                        <Engine:TreeViewNode Content="Orange"/>
+                        <Engine:TreeViewNode Content="Apples" IsExpanded="true"/>
+                    </Engine:TreeViewNode.ChildNodes>
+                </Engine:TreeViewNode>
+                <Engine:TreeViewNode Content="Vegetables" IsExpanded="true">
+                    <Engine:TreeViewNode.ChildNodes>
+                        <Engine:TreeViewNode Content="Root Vegetables" IsExpanded="true">
+                            <Engine:TreeViewNode.ChildNodes>
+                                <Engine:TreeViewNode Content="Potato"/>
+                                <Engine:TreeViewNode Content="Carrot"/>
+                            </Engine:TreeViewNode.ChildNodes>
+                        </Engine:TreeViewNode>
+                        <Engine:TreeViewNode Content="Podded">
+                            <Engine:TreeViewNode.ChildNodes>
+                                <Engine:TreeViewNode Content="Peanut"/>
+                                <Engine:TreeViewNode Content="Lentil"/>
+                            </Engine:TreeViewNode.ChildNodes>
+                        </Engine:TreeViewNode>
+                    </Engine:TreeViewNode.ChildNodes>
+                </Engine:TreeViewNode>
+            </Syncfusion:SfTreeView.Nodes>
+        </Syncfusion:SfTreeView>
+    </Grid>
+</Window>
